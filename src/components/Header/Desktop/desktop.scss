@@ -1,0 +1,36 @@
+.header-desktop-nav {
+  position: absolute;
+  top: 19px;
+  height: 32px;
+  .header-desktop-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+  }
+  .header-desktop-menu-item:last-of-type {
+    border-left: 1px solid #fff;
+    .header-desktop-menu-link {
+      padding-left: 1.5rem;
+    }
+  }
+  .header-desktop-menu-item {
+    margin-left: 1.5rem;
+    :hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.header-desktop-logo {
+  position: absolute;
+  top: 19px;
+  height: 32px;
+  transition: 0.25s ease-in-out;
+}
+.header-desktop-logo:hover {
+  opacity: 0.5;
+  transition: 0.25s ease-in-out;
+}

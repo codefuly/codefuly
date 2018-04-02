@@ -1,0 +1,106 @@
+$font-color-light: #fff;
+$font-color-dark: #323648;
+$font-color-darken: #6d6f7b;
+$background-light: #ffffff;
+$background-dark: #212121;
+$brand-color-one: #ff3366;
+$brand-color-two: #9013fe;
+$gradient: linear-gradient(to right, #0a1922, #222f38, #0a1922);
+$main-font: "Lato", sans-serif;
+
+@mixin for-size($range) {
+  $phone-upper-boundary: 700px;
+  $tablet-portrait-upper-boundary: 900px;
+  $tablet-landscape-upper-boundary: 1500px;
+  $desktop-upper-boundary: 1800px;
+
+  @if $range == phone-only {
+    @media (max-width: #{$phone-upper-boundary - 1}) {
+      @content;
+    }
+  } @else if $range == tablet-portrait-up {
+    @media (min-width: $phone-upper-boundary) {
+      @content;
+    }
+  } @else if $range == tablet-landscape-up {
+    @media (min-width: $tablet-portrait-upper-boundary) {
+      @content;
+    }
+  } @else if $range == desktop-up {
+    @media (min-width: $tablet-landscape-upper-boundary) {
+      @content;
+    }
+  } @else if $range == big-desktop-up {
+    @media (min-width: $desktop-upper-boundary) {
+      @content;
+    }
+  }
+}
+
+// usage
+.home-container,
+.about-container,
+.career-container,
+.services-container,
+.contact-container,
+.footer {
+  @include for-size(phone-only) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  @include for-size(tablet-portrait-up) {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  @include for-size(tablet-landscape-up) {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  @include for-size(desktop-up) {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+  @include for-size(big-desktop-up) {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+}
+
+// TYPOGRAPHY
+
+@include for-size(phone-only) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+@include for-size(tablet-portrait-up) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@include for-size(tablet-landscape-up) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@include for-size(desktop-up) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+p,
+a,
+li,
+span,
+input,
+textarea,
+label,
+button {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #6d6f7b;
+  text-decoration: none;
+  line-height: 1.75;
+  font-size: 1.125rem;
+}

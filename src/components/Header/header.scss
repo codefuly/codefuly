@@ -1,0 +1,61 @@
+@import "../../layouts/global.scss";
+
+.header-container {
+  height: 70px;
+  background: $gradient;
+}
+
+.header-desktop-menu-item {
+  a {
+    font-weight: 600;
+  }
+}
+
+@include for-size(phone-only) {
+  .header-desktop-logo {
+    left: 1rem;
+  }
+  .bm-burger-button {
+    right: 1rem;
+    display: block !important;
+  }
+  .header-desktop-nav {
+    display: none;
+  }
+}
+@include for-size(tablet-portrait-up) {
+  .header-desktop-logo {
+    left: 5rem;
+  }
+  .bm-burger-button ,
+  .header-desktop-nav {
+    right: 5rem;
+  }
+}
+@include for-size(tablet-landscape-up) {
+  .header-desktop-logo {
+    left: 5rem;
+  }
+  .bm-burger-button,
+  .header-desktop-nav {
+    right: 5rem;
+  }
+}
+@include for-size(desktop-up) {
+  .header-desktop-logo {
+    left: 10rem;
+  }
+  .bm-burger-button,
+  .header-desktop-nav {
+    right: 10rem;
+  }
+}
+@include for-size(big-desktop-up) {
+  .header-desktop-logo {
+    left: 15rem;
+  }
+  .bm-burger-button,
+  .header-desktop-nav {
+    right: 15rem;
+  }
+}

@@ -1,0 +1,108 @@
+@import '../../../layouts/global.scss';
+
+.header-mobile-logo {
+  left: 24px !important;
+  top: 16px !important;
+  height: 32px;
+}
+
+.header-mobile-list {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  @include for-size(phone-only) {
+    position: fixed;
+    background: inherit;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+  }
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 32px;
+  top: 20px;
+  display: none;
+}
+
+.bm-burger-bars {
+  background: $font-color-light;
+  height: 5px !important;
+}
+
+.bm-cross-button {
+  span {
+    top: 0;
+    right: 0;
+  }
+}
+
+.header-desktop-menu-item {
+  a {
+    font-weight: 600;
+  }
+}
+
+.header-mobile-menu-link {
+  font-weight: 400;
+}
+
+.header-mobile-email {
+  color: $font-color-darken !important;
+}
+
+.bm-cross {
+  background: $font-color-dark;
+}
+
+.bm-menu {
+  background: #fff;
+  padding: 1.5em 1.5em 0;
+  text-align: center;
+}
+
+.bm-morph-shape {
+  fill: $brand-color-one;
+}
+
+.bm-item-list {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-size: 40px;
+  font-weight: 700;
+  li {
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+  }
+  ul {
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: $font-color-dark;
+  }
+}
+
+.header-mobile-hr {
+  background: $font-color-darken !important;
+  margin: 1rem 0;
+}
+
+.header-mobile-copyright {
+  font-size: 0.913rem;
+}
+
+.bm-overlay {
+  background: $font-color-light;
+  height: 100vh;
+  color: $font-color-light;
+}
