@@ -1,0 +1,64 @@
+@import "../../../layouts/global.scss";
+
+// Desktop
+.contact-container {
+  margin-bottom: 100px;
+  .invitation {
+    margin-bottom: 50px;
+  }
+}
+.form-container {
+  form {
+    > * {
+      display: block;
+      > * {
+        display: block;
+      }
+    }
+  }
+  input::placeholder {
+    font-size: 1rem;
+  }
+
+  input,
+  textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: none;
+    padding: 1rem;
+    box-sizing: border-box;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    background: transparent;
+    color: $font-color-dark;
+    width: 40%;
+    margin-bottom: 2rem;
+    
+    @include for-size(phone-only) {
+      width: 100%;
+    }
+  }
+
+  input:focus,
+  textarea:focus {
+    box-shadow: none;
+    border: 1px solid rgba(33, 33, 33, 0.6);
+  }
+  textarea {
+    height: 10rem;
+  }
+}
+
+button {
+  outline:none;
+}
+.success {
+  background: #4BB543;
+  border-color: #4BB543;
+}
+.success:hover {
+  background: #4BB543;
+  border-color: #4BB543;
+  color: #fff;
+}

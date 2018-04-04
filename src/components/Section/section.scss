@@ -1,0 +1,51 @@
+@import '../../layouts/global.scss';
+
+.section {
+    display: block;
+    // padding: 1rem;
+    // background: #fff;
+    // border-radius: 2px;
+    // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+    
+    .section-image {
+      margin-bottom: 2rem;
+      height: 240px;
+      background-size: cover;
+      background-repeat: no-repeat, repeat;
+      background-position: center center;
+      // filter: sepia(40%);
+      @include for-size(phone-only) {
+        height: 160px;
+      }
+  
+      img {
+        height: 60px;
+      }
+    }
+    .section-header {
+      color: $font-color-dark;
+      font-size: 1.5rem;
+      @include for-size(phone-only) {
+        font-size: 1.25rem;
+      }
+    }
+    .section-description,
+    .section-extra {
+      color: $font-color-darken;
+    }
+    .section-extra {
+      font-family: $main-font;
+      font-weight: 900;
+    }
+    .section-content {
+      @include for-size(phone-only) {
+        width: 100%;
+      }
+      align-content: center;
+      hr {
+        margin: 1rem 0;
+        padding: 0;
+      }
+    }
+  }

@@ -1,0 +1,25 @@
+@import "../../layouts/global.scss";
+
+.information-container {
+    .information-title {
+      font-family: $main-font;
+      font-size: 1.25rem;
+    }
+    .information-email {
+      display: block;
+      margin: 1rem 0;
+      font-size: 0.913rem;
+    }
+    .information-text,
+    .information-copyright {
+      display: block;
+      font-size: 0.913rem;
+    }
+    .information-text {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .information-email:hover {
+    text-decoration: underline;
+  }

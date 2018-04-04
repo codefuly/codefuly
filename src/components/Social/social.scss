@@ -1,0 +1,24 @@
+@import "../../layouts/global.scss";
+@import "../../data/fonts/fonts.css";
+
+.social-container {
+    .social-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    .social-icon {
+      display: inline-block;
+      margin: 0;
+    }
+    .social-icon:nth-child(even) {
+      padding: 0 1rem;
+    }
+  }
+  .social-icon:hover {
+    a {
+      span {
+        color: $brand-color-one !important;
+      }
+    }
+  }

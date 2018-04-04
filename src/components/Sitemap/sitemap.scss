@@ -1,0 +1,54 @@
+@import "../../layouts/global.scss";
+
+.sitemap-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  .sitemap-link {
+    display: block;
+    font-family: $main-font;
+    font-size: 1.25rem;
+    font-weight: 900;
+  }
+  .sitemap-sublinks-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  .sitemap-sublink-item {
+    padding: 0;
+    margin: 0;
+    :hover {
+      text-decoration: underline;
+    }
+  }
+  .sitemap-sublink {
+    display: block;
+    font-size: 0.913rem;
+    margin-bottom: 0.5rem;
+  }
+  .sitemap-links {
+    > * {
+      margin-bottom: 1rem;
+    }
+  }
+  @include for-size(phone-only) {
+    justify-content: space-between;
+  }
+  @include for-size(tablet-portrait-up) {
+    margin-left: 2rem;
+    .sitemap-sublinks-container {
+      margin-right: 0.5rem;
+    }
+    .sitemap-links {
+      margin-left: 0.5rem;
+    }
+    .sitemap-sublinks-container {
+      margin-left: 0.5rem;
+    }
+  }
+}
+.sitemap-link:hover {
+  text-decoration: underline;
+}

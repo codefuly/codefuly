@@ -1,4 +1,5 @@
 import React from "react";
+import { string } from "prop-types";
 import "./social.scss";
 
 const Social = ({ color }) => (
@@ -22,5 +23,9 @@ const Social = ({ color }) => (
     </ul>
   </div>
 );
+
+Social.propTypes = {
+  color: string.isRequired
+}
 
 export default Social;

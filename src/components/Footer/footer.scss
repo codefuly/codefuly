@@ -1,0 +1,66 @@
+@import "../../layouts/global.scss";
+
+.footer-container {
+  padding-top: 50px;
+  background: $gradient;
+}
+
+.footer {
+  display: flex;
+  color: $font-color-light;
+  h6, p, a {
+    color: $font-color-light;
+  }
+  p {
+    font-size: 0.913rem;
+  }
+}
+
+.footer-logo {
+  height: 20px;
+}
+
+//Media
+
+@include for-size(phone-only) {
+  .footer {
+    flex-direction: column-reverse;
+    .footer-left {
+      width: 100%;
+    }
+    .footer-right {
+      width: 100%;
+    }
+  }
+}
+@include for-size(tablet-portrait-up) {
+  .footer {
+    .footer-left {
+      width: 50%;
+    }
+    .footer-right {
+      width: 50%;
+    }
+  }
+}
+@include for-size(tablet-landscape-up) {
+  .footer {
+    .footer-left {
+      width: 55%;
+    }
+    .footer-right {
+      width: 45%;
+    }
+  }
+}
+@include for-size(desktop-up) {
+  .footer {
+    flex-direction: row;
+    .footer-left {
+      width: 60%;
+    }
+    .footer-right {
+      width: 40%;
+    }
+  }
+}

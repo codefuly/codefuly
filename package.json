@@ -12,6 +12,9 @@
     "normalize.css": "^8.0.0",
     "react-burger-menu": "^2.4.0",
     "react-helmet": "^5.2.0",
+    "react-router-hash-link": "^1.2.0",
+    "react-transition-group": "^2.3.0",
+    "rrc": "^0.10.1",
     "typography": "^0.16.6"
   },
   "keywords": [
