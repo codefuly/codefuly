@@ -5,8 +5,10 @@ $background-light: #ffffff;
 $background-dark: #212121;
 $brand-color-one: #ff3366;
 $brand-color-two: #9013fe;
-$gradient: linear-gradient(to right, #0a1922, #222f38, #0a1922);
-$main-font: "Lato", sans-serif;
+$gradient: #000;
+$header-font: "Lato", sans-serif;
+$sub-header-font: "Lato", sans-serif;
+$text-font: "Lato", sans-serif;
 
 @mixin for-size($range) {
   $phone-upper-boundary: 700px;
@@ -97,7 +99,7 @@ input,
 textarea,
 label,
 button {
-  font-family: "Lato", sans-serif;
+  font-family: $text-font;
   font-weight: 400;
   color: #6d6f7b;
   text-decoration: none;
@@ -118,6 +120,13 @@ body {
   overflow: visible;
 }
 
+h1, h2, h3 {
+  font-family: $header-font;
+}
+
+h4, h5, h6 {
+  font-family: $sub-header-font;
+}
 
 
 h1,
@@ -126,7 +135,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', sans-serif;
   color: #323648;
   line-height: 1.5;
   padding: 0;

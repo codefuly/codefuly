@@ -17,7 +17,7 @@ const Information = () => (
     <hr />
     <img className="footer-logo" src={logo_light} alt="" />
     <a className="information-email" href="">
-      info@codewhile.com
+      info@incremental.studio
     </a>
     <Social color={'#fff'} />
     <p className="information-copyright">

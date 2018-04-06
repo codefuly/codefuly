@@ -18,6 +18,12 @@
   }
   .header-desktop-menu-item {
     margin-left: 1.5rem;
+    font-weight: 700;
+    > * {
+      font-weight: 900;
+      font-size: 18px;
+
+    }
     :hover {
       opacity: 0.5;
     }
@@ -26,8 +32,8 @@
 
 .header-desktop-logo {
   position: absolute;
-  top: 19px;
-  height: 32px;
+  top: 23px;
+  height: 24px;
   transition: 0.25s ease-in-out;
 }
 .header-desktop-logo:hover {
